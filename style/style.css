@@ -110,7 +110,7 @@ body {
     display: block;
     margin-top: 9px;
 }
-
+/* responsive design for mobile version*/
 @media  screen and (max-width: 375px) {
     .card{
         width:326px;
