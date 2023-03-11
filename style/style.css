@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-style: normal;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #2e3349;
+}
+.main-card {
+  background-color: #19A1AE;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.main-card::before {
+    content: url(/images/bg-pattern-top.svg);
+    position: absolute;
+    left:0;
+    top:0;
+    transform:translate(-38%,-50%)
+    
+}
+.main-card::after{
+    content: url(/images/bg-pattern-bottom.svg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(30%, 65%);
+}
+.card {
+    width:350px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+    z-index:1;
+}
+.background{
+    border-radius: 15px 15px 0px 0px;
+    height:140px;
+    width: 100%;
+}
+.card-pictures{
+    position: relative;
+}
+.victor{
+    width: 96px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+}
+.header{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 68px;
+    line-height:22px;
+   
+}
+.age{
+    font-weight: 400 ;
+    color: #6B7082;
+    margin-left: 8.5px;
+}
+.city{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    display: block;
+    margin-top: 13px;
+    color: #6B7082;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #E8E9EC;;
+    margin-top: 28px;
+}
+.quantity{
+    width:246px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:24px 55.5px 27px 48.5px;
+}
+.items h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.32px;
+    text-align: center;   
+}
+
+.items span{
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: #6B7082;
+    line-height: 12.4px;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-top: 9px;
+}
+
+@media  screen and (max-width: 375px) {
+    .card{
+        width:326px;
+    }
+    .quantity{
+        margin:24px 52px 24px 41px;
+    }
+    .main-card::after{
+        transform:translate(70%,65%)
+    }
+    .main-card::before{
+        transform: translate(-70%,-65%);
+    }
+
+}
+
+    
+
+
