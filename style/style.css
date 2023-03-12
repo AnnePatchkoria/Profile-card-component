@@ -21,14 +21,14 @@ body {
   overflow: hidden;
 }
 .main-card::before {
-    content:url(./images/bg-pattern-top.svg);
+    content:url(../images/bg-pattern-top.svg);
     position: absolute;
     left:0;
     top:0;
     transform:translate(-38%,-50%)   
 }
 .main-card::after{
-    content:url(./images/bg-pattern-bottom.svg);
+    content:url(../images/bg-pattern-bottom.svg);
     position: absolute;
     right: 0;
     bottom: 0;
